@@ -1,0 +1,19 @@
+# Configuración del servidor
+server:
+    port: 25565  # El puerto en el que se ejecutará el servidor
+
+# Configuración de SpringDoc (para la documentación de la API)
+springdoc:
+    swagger-ui.path: /openapi/swagger-ui.html  # Ruta de la interfaz de usuario de Swagger
+    api-docs.path: /openapi/v3/api-docs  # Ruta de los documentos de la API
+    packagesToScan: com.example.demo  # Paquetes para escanear para la documentación de la API
+    pathsToMatch: /**  # Rutas para incluir en la documentación de la API
+
+# Configuración de Sentry (para el seguimiento de errores)
+sentry:
+  dsn: https://ab77cb5baa78175372552d4e8678adb2@o4507218945966080.ingest.us.sentry.io/4507218957565952  # DSN de Sentry
+  # Set traces-sample-rate to 1.0 to capture 100% of transactions for performance monitoring.
+  # We recommend adjusting this value in production.
+  traces-sample-rate: 1.0  # Tasa de muestreo de rastreo
+
+
